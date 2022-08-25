@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/script.js" defer></script>
+    <title>Biglietti treno</title>
+</head>
+
+<body>
+    <form>
+        <!-- First name and last name -->
+        <div>
+            <label for="Fname & Lname">First name & last name:</label>
+            <input type="text" name="Fname & Lname" id="input-name" placeholder="name & surname">
+        </div>
+
+        <!-- Km to travel -->
+        <div>
+            <label for="km to travel">Km</label>
+            <input type="number" name="km to travel" id="input-km" placeholder="km">
+        </div>
+
+        <!-- Age -->
+        <div>
+            <select name="age" id="input-age">
+                <option value="Full Price">Full price ticket</option>
+                <option value="Under 18">Under 18</option>
+                <option value="Over 65">Over 65</option>
+            </select>
+        </div>
+
+        <!-- Calculate button -->
+        <div>
+            <input type="button" id="calc-button" value="Calculate price">
+        </div>
+    </form>
+    <div id="train"></div>
+</body>
+
+</html>
